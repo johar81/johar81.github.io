@@ -1,0 +1,110 @@
+*{
+    border-radius: 12px;
+    
+}
+
+.cover{
+    /*this to make a gradien color to the cver and we give height to make the color
+    for hole page **/
+   background-image:linear-gradient(#640e0e, rgb(129, 24, 24) , #914949);
+ min-height:800px;
+ display: flex;
+ flex-wrap: wrap;
+}
+/*====== header=====*/
+
+header{
+    background-color: #fff;
+    height: 100px;
+   
+}
+
+
+.navbar p{
+    /* inline- block to to make the p come next to the img 
+    so is not blok any more  */
+    font-size: 40px;
+    font-family: cursive;
+    float: left;
+    margin-top: 0;
+    color: #860707;
+    display: inline-block;
+    position: relative;
+    top: 15px;
+    left: 130px;
+   
+    
+}
+.navbar img{
+    width: 90px;
+    height: 90px;
+    margin-top: 35px;
+   
+}
+ 
+.container h1{
+    color: tomato;
+    font-size: 40px;
+}
+.container p{
+    font-size: 20px;
+}
+img{
+    /* this has position and it move from the closes position which
+    is in navpar p*/
+    height: 300px;
+    width: 300px;
+    position: absolute;
+    left: 50px;
+    top: -30px;
+    transition: 0.5s;
+}
+a{
+    text-decoration: none;
+    font-size: 20px;
+    margin: 15px;
+    opacity: 0.5;
+    transition: all 0.3s;
+    float: right;
+    margin-top: 40px;
+    color: tomato;
+}
+a:hover{
+    opacity: 1;
+}
+section:hover img{
+    top: -120px;
+    transform: rotate(720deg);
+    border-radius: 50%;
+    
+}
+/* this a section that behind the img*/
+section{
+    background-color: white;
+    height: 350px;
+    width: 400px;
+    margin: 200px auto 0 auto;
+    position: relative;
+    transition: all 1s;
+}
+section:hover{
+    /*the height of the section is 350 but this hover make it 400*/
+    height: 400px;
+}
+.container{
+    position: absolute;
+    bottom: 0px;
+    padding-left: 10px;
+    opacity: 0;
+    transition: all 2s;
+    text-align: center;
+}
+section:hover .container{
+        opacity: 1;
+}
+
+footer{
+    text-align: center;
+    font-family: serif;
+    
+}
